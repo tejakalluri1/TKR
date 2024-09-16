@@ -1,6 +1,6 @@
 bucket = {
   bucket1 = {
-    bucket_name = "myjpc2"
+    bucket_name = "myjpc7"
 
   },
   bucket2 = {
