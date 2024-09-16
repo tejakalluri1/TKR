@@ -41,7 +41,17 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
 
-     # On push to "main", build or change infrastructure according to Terraform configuration files
-    - name: Terraform destroy
+    # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
+    - name: Terraform Init
+      run: terraform init 
+      working-directory: ./modules
+
+    # Generates an execution plan for Terraform
+    - name: Terraform Plan
+      run: terraform plan -input=false 
+      working-directory: ./modules
+
+      # On push to "main", build or change infrastructure according to Terraform configuration files
+    - name: Terraform Apply
       run: terraform apply -auto-approve
       working-directory: ./modules
