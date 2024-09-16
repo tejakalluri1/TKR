@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 module "s3" {
   source      = "./s3"
   for_each    = var.bucket
@@ -11,17 +11,4 @@ module "vpc" {
   vpc_name = var.vpc_name
 
 }
-=======
-module "s3" {
-  source      = "./s3"
-  for_each    = var.bucket
-  bukcet_name = each.value.bucket_name
-}
 
-module "vpc" {
-  source   = "./vpc"
-  cidr     = var.cidr
-  vpc_name = var.vpc_name
-
-}
->>>>>>> aa1468c75ff177bd3afa66daf6276114d8dbf0a9
