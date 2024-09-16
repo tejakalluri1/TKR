@@ -1,14 +1,14 @@
 bucket = {
   bucket1 = {
-    bucket_name = "myjpc7"
+    bucket_name = "teja-05"
 
   },
   bucket2 = {
-    bucket_name = "myjpc4"
+    bucket_name = "teja-06"
 
   },
   bucket3 = {
-    bucket_name = "myjpc5"
+    bucket_name = "teja-08"
 
   }
 }
